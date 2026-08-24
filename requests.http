@@ -1,0 +1,19 @@
+@local = http://localhost:5000
+
+### Apresentação da API
+GET {{local}}/
+
+### Health check
+GET {{local}}/health
+
+### Parâmetro de rota
+GET {{local}}/saudacao/Ana
+
+### Parâmetro de consulta
+GET {{local}}/saudacao/Ana?idioma=en
+
+### Variáveis do ambiente de implantação
+GET {{local}}/info
+
+### Tratamento de rota inexistente
+GET {{local}}/nao-existe
